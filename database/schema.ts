@@ -30,7 +30,7 @@ export const users = pgTable("users", {
   universityId: integer("university_id").notNull().unique(),
   status: STATUS_ENUM("status").notNull().default("PENDING"),
   role: ROLE_ENUM("role").notNull().default("USER"),
-  lastActivity: date("last_activity", { mode: "date" }).notNull().defaultNow(),
+  lastActivity: date("lastActivity").defaultNow(),
   createdAt: timestamp("created_at", {
     withTimezone: true,
   }).defaultNow(),
