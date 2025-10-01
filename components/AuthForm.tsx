@@ -17,7 +17,7 @@ import {
 import { Input } from "./ui/input";
 import Link from "next/link";
 import { FIELD_NAMES, FIELD_TYPES } from "@/constants";
-import ImageUpload from "./ImageUpload";
+import ImageUpload from "./FileUpload";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 import { use } from "react";
